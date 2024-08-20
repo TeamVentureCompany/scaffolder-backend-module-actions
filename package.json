@@ -1,0 +1,46 @@
+{
+  "name": "@team-venture-company/backstage-plugin-scaffolder-backend-module-actions",
+  "description": "The teamventureco-actions module for @backstage/plugin-scaffolder-backend",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TeamVentureCompany/scaffolder-backend-module-actions.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.cjs.js",
+    "types": "dist/index.d.ts"
+  },
+  "backstage": {
+    "role": "backend-plugin-module"
+  },
+  "scripts": {
+    "start": "backstage-cli package start",
+    "build": "backstage-cli package build",
+    "lint": "backstage-cli package lint",
+    "test": "backstage-cli package test",
+    "clean": "backstage-cli package clean",
+    "prepack": "backstage-cli package prepack",
+    "postpack": "backstage-cli package postpack"
+  },
+  "dependencies": {
+    "@backstage/backend-plugin-api": "^0.6.18",
+    "@backstage/integration": "^1.11.0",
+    "@backstage/plugin-scaffolder-node": "^0.4.7"
+  },
+  "devDependencies": {
+    "@backstage/backend-common": "^0.23.2",
+    "@backstage/cli": "^0.26.6",
+    "@backstage/plugin-scaffolder-node-test-utils": "^0.1.9",
+    "@spotify/prettier-config": "^15.0.0",
+    "prettier": "^3.0.0"
+  },
+  "prettier": "@spotify/prettier-config",
+  "files": [
+    "dist"
+  ],
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+}
