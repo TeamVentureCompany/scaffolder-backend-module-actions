@@ -41,7 +41,8 @@
     "@backstage/config": "^1.2.0",
     "@backstage/plugin-scaffolder-node-test-utils": "^0.1.9",
     "@spotify/prettier-config": "^15.0.0",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "semantic-release": "^24.1.0"
   },
   "prettier": "@spotify/prettier-config",
   "files": [

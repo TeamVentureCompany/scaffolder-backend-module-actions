@@ -32,11 +32,12 @@ jobs:
         uses: backstage/actions/yarn-install@v0.6.6
         with:
           cache-prefix: ${{ runner.os }}-${{ steps.node.outputs.node-version }}
-#      - name: Bump and Release
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-#        run: npx semantic-release
+
+      - name: Bump and Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
 
 #      - name: Bump version and push tag
 #        id: tag_version
