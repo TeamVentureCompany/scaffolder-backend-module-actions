@@ -27,6 +27,8 @@ jobs:
       - name: Setup node
         id: node
         uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
       - name: yarn install
         uses: backstage/actions/yarn-install@v0.6.6
