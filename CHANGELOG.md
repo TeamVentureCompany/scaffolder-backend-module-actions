@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/TeamVentureCompany/scaffolder-backend-module-actions/compare/v1.0.1...v1.0.2) (2024-08-25)
+
+### Bug Fixes
+
+* missing backstage.* settings ([be7f583](https://github.com/TeamVentureCompany/scaffolder-backend-module-actions/commit/be7f583d1f2d73bc780d4381ebdafb5c128f334a))
+
 ## [1.0.1](https://github.com/TeamVentureCompany/scaffolder-backend-module-actions/compare/v1.0.0...v1.0.1) (2024-08-25)
 
 ### Bug Fixes
