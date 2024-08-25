@@ -40,6 +40,8 @@
     "@backstage/cli": "^0.26.6",
     "@backstage/config": "^1.2.0",
     "@backstage/plugin-scaffolder-node-test-utils": "^0.1.9",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@spotify/prettier-config": "^15.0.0",
     "prettier": "^3.0.0",
     "semantic-release": "^24.1.0"

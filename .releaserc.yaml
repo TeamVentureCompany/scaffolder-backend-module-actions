@@ -6,6 +6,8 @@ tagFormat: 'v${version}'
 plugins:
   - '@semantic-release/commit-analyzer'
   - '@semantic-release/release-notes-generator'
+  - path: '@semantic-release/changelog'
+    changelogFile: 'CHANGELOG.md'
   - path: '@semantic-release/git'
     assets:
       - 'CHANGELOG.md'
