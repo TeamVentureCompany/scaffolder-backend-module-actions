@@ -1,0 +1,85 @@
+name: Code Validation
+
+on:
+  workflow_call:
+
+jobs:
+  format:
+    name: Check Format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup node
+        id: node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: yarn install
+        uses: backstage/actions/yarn-install@v0.6.6
+        with:
+          cache-prefix: ${{ runner.os }}-${{ steps.node.outputs.node-version }}
+
+      - name: yarn format
+        run: yarn prettier --check .
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup node
+        id: node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: yarn install
+        uses: backstage/actions/yarn-install@v0.6.6
+        with:
+          cache-prefix: ${{ runner.os }}-${{ steps.node.outputs.node-version }}
+
+      - name: yarn lint
+        run: yarn lint
+
+  check-types:
+    name: Check Typescript types
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup node
+        id: node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: yarn install
+        uses: backstage/actions/yarn-install@v0.6.6
+        with:
+          cache-prefix: ${{ runner.os }}-${{ steps.node.outputs.node-version }}
+
+      - name: yarn tsc
+        run: yarn tsc:full
+
+  test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup node
+        id: node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: yarn install
+        uses: backstage/actions/yarn-install@v0.6.6
+        with:
+          cache-prefix: ${{ runner.os }}-${{ steps.node.outputs.node-version }}
+
+      - name: yarn test
+        run: yarn test:all

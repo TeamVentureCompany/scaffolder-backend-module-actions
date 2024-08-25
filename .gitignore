@@ -1,0 +1,5 @@
+coverage
+dist
+dist-types
+node_modules
+.idea

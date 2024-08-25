@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+# for checkout
+#permissions:
+#  contents: read
+
+jobs:
+  code-validation:
+    uses: ./.github/workflows/code-validation.yml
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    needs: [code-validation]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup node
+        id: node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: yarn install
+        uses: backstage/actions/yarn-install@v0.6.6
+        with:
+          cache-prefix: ${{ runner.os }}-${{ steps.node.outputs.node-version }}
+
+      - name: Bump and Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
