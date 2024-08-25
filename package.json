@@ -7,7 +7,8 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TeamVentureCompany/scaffolder-backend-module-actions.git"
+    "url": "https://github.com/TeamVentureCompany/scaffolder-backend-module-actions.git",
+    "directory": "."
   },
   "publishConfig": {
     "access": "public",
@@ -15,7 +16,9 @@
     "types": "dist/index.d.ts"
   },
   "backstage": {
-    "role": "backend-plugin-module"
+    "role": "backend-plugin-module",
+    "pluginId": "scaffolder",
+    "pluginPackage": "@backstage/plugin-scaffolder-backend"
   },
   "scripts": {
     "start": "backstage-cli package start",
