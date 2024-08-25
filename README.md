@@ -1,4 +1,4 @@
-# scaffolder-backend-module-actions
+# backstage-plugin-scaffolder-backend-module-actions
 
 Welcome to the Team Venture Co action repository for the Backstage `scaffolder-backend`.
 
