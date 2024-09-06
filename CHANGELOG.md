@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/TeamVentureCompany/scaffolder-backend-module-actions/compare/v1.0.3...v1.0.4) (2024-09-06)
+
+### Bug Fixes
+
+* don't specify the dist files, include all ([9fab190](https://github.com/TeamVentureCompany/scaffolder-backend-module-actions/commit/9fab190c419239bd411881b7f08c5ca0b4c4e2cc))
+
 ## [1.0.3](https://github.com/TeamVentureCompany/scaffolder-backend-module-actions/compare/v1.0.2...v1.0.3) (2024-09-06)
 
 ### Bug Fixes
