@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/TeamVentureCompany/scaffolder-backend-module-actions/compare/v1.0.2...v1.0.3) (2024-09-06)
+
+### Bug Fixes
+
+* Update release.yml ([c8f3429](https://github.com/TeamVentureCompany/scaffolder-backend-module-actions/commit/c8f3429747fd3b240f08bbfd8131a46b1990a606))
+
 ## [1.0.2](https://github.com/TeamVentureCompany/scaffolder-backend-module-actions/compare/v1.0.1...v1.0.2) (2024-08-25)
 
 ### Bug Fixes
