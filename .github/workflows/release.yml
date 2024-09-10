@@ -31,7 +31,7 @@ jobs:
           node-version: 20
 
       - name: yarn install
-        uses: backstage/actions/yarn-install@v0.6.6
+        uses: backstage/actions/yarn-install@v0.6.15
         with:
           cache-prefix: ${{ runner.os }}-${{ steps.node.outputs.node-version }}
 
