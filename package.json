@@ -32,15 +32,15 @@
     "tsc:full": "tsc --skipLibCheck true --incremental false"
   },
   "dependencies": {
-    "@backstage/backend-plugin-api": "^0.6.18",
+    "@backstage/backend-plugin-api": "^0.8.0",
     "@backstage/errors": "^1.2.4",
     "@backstage/integration": "^1.11.0",
-    "@backstage/plugin-scaffolder-node": "^0.4.7",
+    "@backstage/plugin-scaffolder-node": "^0.5.0",
     "yaml": "^2.5.0"
   },
   "devDependencies": {
-    "@backstage/backend-common": "^0.23.2",
-    "@backstage/cli": "^0.26.6",
+    "@backstage/backend-common": "^0.25.0",
+    "@backstage/cli": "^0.28.0",
     "@backstage/config": "^1.2.0",
     "@backstage/plugin-scaffolder-node-test-utils": "^0.1.9",
     "@semantic-release/changelog": "^6.0.3",
