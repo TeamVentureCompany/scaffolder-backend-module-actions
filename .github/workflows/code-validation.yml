@@ -14,7 +14,7 @@ jobs:
         id: node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: yarn install
         uses: backstage/actions/yarn-install@v0.6.6
@@ -34,7 +34,7 @@ jobs:
         id: node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: yarn install
         uses: backstage/actions/yarn-install@v0.6.6
@@ -54,7 +54,7 @@ jobs:
         id: node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: yarn install
         uses: backstage/actions/yarn-install@v0.6.6
@@ -74,7 +74,7 @@ jobs:
         id: node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: yarn install
         uses: backstage/actions/yarn-install@v0.6.6
