@@ -32,7 +32,7 @@
     "tsc:full": "tsc --skipLibCheck true --incremental false"
   },
   "dependencies": {
-    "@backstage/backend-plugin-api": "^0.6.18",
+    "@backstage/backend-plugin-api": "^1.0.0",
     "@backstage/errors": "^1.2.4",
     "@backstage/integration": "^1.11.0",
     "@backstage/plugin-scaffolder-node": "^0.4.7",
