@@ -35,7 +35,7 @@
     "@backstage/backend-plugin-api": "^0.6.18",
     "@backstage/errors": "^1.2.4",
     "@backstage/integration": "^1.11.0",
-    "@backstage/plugin-scaffolder-node": "^0.4.7",
+    "@backstage/plugin-scaffolder-node": "^0.11.0",
     "yaml": "^2.5.0"
   },
   "devDependencies": {
